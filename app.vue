@@ -4,9 +4,9 @@
   </div>
 </template>
 
-<styles scoped lang="scss">
+<styles lang="scss">
 .main {
-  background: $primary;
+  background: var(--primary);
   width: 100%;
   height: 100%;
 }

@@ -3,6 +3,13 @@
   src: local("public-pixel"), url(/fonts/public-pixel.ttf) format("truetype");
 }
 
+:root {
+  --font: "public-pixel";
+  --primary: #f6d4b1;
+  --secondary: #525252;
+  --shadow: -1px -1px 0px #f6d4b1, -4px 4px 0px rgba(82, 82, 82, 0.25);
+}
+
 #__nuxt,
 html,
 body {
