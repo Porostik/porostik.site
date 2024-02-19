@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   modules: ["nuxt-svgo"],
   devtools: { enabled: true },
-  css: ["./assets/main.scss"],
+  css: ["./assets/main.css"],
   svgo: {
     defaultImport: "component",
     svgoConfig: {
@@ -18,6 +18,15 @@ export default defineNuxtConfig({
           },
         },
       ],
+    },
+  },
+
+  routeRules: {
+    "/": {
+      ssr: false,
+    },
+    "/about": {
+      ssr: false,
     },
   },
 });

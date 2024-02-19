@@ -18,7 +18,7 @@ const classObj = reactive({
   </span>
 </template>
 
-<styles lang="scss">
+<style scoped lang="scss">
 .text {
   font-family: var(--font);
 
@@ -34,18 +34,22 @@ const classObj = reactive({
 
   &--sm {
     font-size: 12px;
+    line-height: 18px;
   }
 
   &--md {
     font-size: 14px;
+    line-height: 20px;
   }
 
   &--lg {
     font-size: 16px;
+    line-height: 22px;
   }
 
   &--xl {
     font-size: 18px;
+    line-height: 24px;
   }
 }
-</styles>
+</style>

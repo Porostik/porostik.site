@@ -1,13 +1,40 @@
 <template>
-  <div class="main">
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
 
-<styles lang="scss">
-.main {
-  background: var(--primary);
-  width: 100%;
-  height: 100%;
+<style>
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: all 0.2s;
 }
-</styles>
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translate(50px, 0);
+}
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translate(-50px, 0);
+}
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translate(-50px, 0);
+}
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translate(50px, 0);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>

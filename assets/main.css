@@ -10,6 +10,10 @@
   --shadow: -1px -1px 0px #f6d4b1, -4px 4px 0px rgba(82, 82, 82, 0.25);
 }
 
+body {
+  background: var(--primary);
+}
+
 #__nuxt,
 html,
 body {

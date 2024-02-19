@@ -7,7 +7,7 @@ const links = {
 </script>
 
 <template>
-  <div className="main">
+  <div class="index">
     <UText type="primary" size="xl"> Hi! </UText>
     <UText type="secondary" size="md">
       My name is Rostislav I am frontend developer...
@@ -28,12 +28,13 @@ const links = {
 </template>
 
 <style lang="scss">
-.main {
+.index {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 8px;
+  height: 100%;
 
   .links {
     display: flex;

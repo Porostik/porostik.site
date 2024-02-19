@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style>
+<style scoped lang="scss">
 .badge {
   box-shadow: var(--shadow);
   padding: 8px;
