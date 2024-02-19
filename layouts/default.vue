@@ -24,11 +24,14 @@ const { prevRoute, nextRoute } = useNavigation();
   background: var(--primary);
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  position: relative;
 
   .page {
     width: 100%;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 10px 20px 10px;
+    overflow-y: auto;
   }
 }
 

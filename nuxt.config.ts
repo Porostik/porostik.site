@@ -21,12 +21,12 @@ export default defineNuxtConfig({
     },
   },
 
-  routeRules: {
-    "/": {
-      ssr: false,
-    },
-    "/about": {
-      ssr: false,
-    },
-  },
+  // routeRules: {
+  //   "/": {
+  //     ssr: false,
+  //   },
+  //   "/about": {
+  //     ssr: false,
+  //   },
+  // },
 });
