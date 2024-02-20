@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  middleware: ["page"],
+});
+
 const links = {
   in: "https://www.linkedin.com/in/rostislav-potapochkin-8b4239237/",
   gh: "https://github.com/Porostik",
@@ -9,7 +13,7 @@ const links = {
 <template>
   <div class="index">
     <UText type="primary" size="xl"> Hi! </UText>
-    <UText type="secondary" size="md">
+    <UText class="mainText" type="secondary" size="md">
       My name is Rostislav I am frontend developer...
     </UText>
 
@@ -35,6 +39,10 @@ const links = {
   flex-direction: column;
   gap: 8px;
   height: 100%;
+
+  .mainText {
+    text-align: center;
+  }
 
   .links {
     display: flex;

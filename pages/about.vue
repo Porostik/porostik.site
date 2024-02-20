@@ -1,8 +1,5 @@
 <script setup lang="ts">
 definePageMeta({
-  pageTransition: {
-    name: "slide-left",
-  },
   middleware: ["page"],
 });
 </script>

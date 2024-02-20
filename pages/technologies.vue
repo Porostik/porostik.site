@@ -1,3 +1,9 @@
+<script setup lang="ts">
+definePageMeta({
+  middleware: ["page"],
+});
+</script>
+
 <template>
   <div class="technologies">
     <UText type="secondary" size="xl"> Technologies </UText>

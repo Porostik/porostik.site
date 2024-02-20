@@ -1,18 +1,24 @@
 <script setup lang="ts">
-const { prevRoute, nextRoute } = useNavigation();
+const route = useRoute();
+
+const prev = computed(() => route.meta.page?.prev);
+const next = computed(() => route.meta.page?.next);
+
+const goPrev = () => navigateTo({ path: prev.value || "" });
+const goNext = () => navigateTo({ path: next.value || "" });
 </script>
 
 <template>
   <div class="main">
-    <a class="controller" :href="prevRoute" v-if="prevRoute">
+    <div class="controller" @click="goPrev" v-if="!!prev">
       <SvgoArrow />
-    </a>
+    </div>
     <div class="page">
       <slot />
     </div>
-    <a class="controller" :href="nextRoute" v-if="nextRoute">
+    <div class="controller" @click="goNext" v-if="!!next">
       <SvgoArrow />
-    </a>
+    </div>
   </div>
 </template>
 

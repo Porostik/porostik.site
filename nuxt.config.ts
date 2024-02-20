@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   modules: ["nuxt-svgo"],
   devtools: { enabled: true },
-  css: ["./assets/main.css"],
+  css: ["~/assets/main.css"],
   svgo: {
     defaultImport: "component",
     svgoConfig: {
@@ -20,13 +20,13 @@ export default defineNuxtConfig({
       ],
     },
   },
-
-  // routeRules: {
-  //   "/": {
-  //     ssr: false,
-  //   },
-  //   "/about": {
-  //     ssr: false,
-  //   },
-  // },
 });
+
+declare module "#app" {
+  interface PageMeta {
+    page?: {
+      prev?: string;
+      next?: string;
+    };
+  }
+}
