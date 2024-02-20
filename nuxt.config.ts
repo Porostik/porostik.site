@@ -20,6 +20,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  routeRules: {
+    "/": { prerender: true },
+  },
 });
 
 declare module "#app" {
