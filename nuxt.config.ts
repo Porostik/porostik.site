@@ -23,8 +23,8 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/": { prerender: true },
-    "/about": { ssr: false },
-    "/technologies": { ssr: false },
+    "/about": { prerender: true },
+    "/technologies": { prerender: true },
   },
 });
 
