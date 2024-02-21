@@ -54,6 +54,7 @@ definePageMeta({
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
   padding-top: 20px;
 
   .technologiesBlock {
